@@ -1,0 +1,49 @@
+<html>
+	<body>
+
+		<h1 style="font-family:calibri;">Complete Web Form</h1>
+
+		<h4 style="font-family:calibri;">First Name</h4>
+		<input type="text" name="user" value="Enter first name" size="100" onclick="if(this.value=='Enter first name') this.value=''" onblur="if(this.value=='') this.value='Enter first name'" />
+
+		<h4 style="font-family:calibri;">Last name</h4>
+		<input type="text" name="user" value="Last name" size="100" onclick="if(this.value=='Last name') this.value=''" onblur="if(this.value=='') this.value='Last name'" />
+
+		<h4 style="font-family:calibri;">Job title</h4>
+	<input type="text" name="user" value="Job title" size="100" onclick="if(this.value=='Job title') this.value=''" onblur="if(this.value=='') this.value='Job title'" />
+
+	<h4 style="font-family:calibri;">Highest level of education</h4>
+	<form method="get" action="http://Form.com/action.php">
+		<input name="highschool" type="checkbox" />High School
+		<br />
+		<input name="collage" type="checkbox" />Collage
+		<br />
+		<input name="gradschool" type="checkbox" />Grad School
+		</form>
+
+	<h4 style="font-family:calibri;">Sex</h4>
+		<form method="get" action="http://Form.com/action.php">
+		<input name="male" type="radio" />Male
+		<br />
+		<input name="female" type="radio" />Female
+		<br />
+		<input name="prefernottosay" type="radio" />Prefer not to say
+	</form>
+
+	<h4 style="font-family:calibri;">Years of experience</h4>
+	<select name="yearsofexperince" id="yearsofexperince">
+		<option>Less than 1</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>More than 6</option>
+	</select>
+
+	<h4 style="font-family:calibri;">Date</h4>
+	<input type="date" name="date" size="100" id="date" pattern="\d{4}-\d{2}-\d{2}">
+
+	</body>
+</html>
